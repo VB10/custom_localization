@@ -10,12 +10,12 @@ void main() {
   });
   test('Supported Language List', () async {
     final data = await langugaeService.fetchLangageList();
-    expect(data, isEmpty);
+    expect(data, List<String>);
   });
 
   test('En Resources List', () async {
     final data = await langugaeService.fetchSpesificResources('en');
-    expect(data, isEmpty);
+    expect(data, isNotEmpty);
   });
 
   test('Get Question key - FetchSpesificResources', () async {
