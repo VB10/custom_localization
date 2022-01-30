@@ -35,8 +35,11 @@ dependencies:
   cupertino_icons: ^1.0.2
   vexana:
     path: /Users/vb/Desktop/development/project/package/vexana
-  hive: ^2.0.5
   dio: ^4.0.4
+  provider: ^6.0.2
+  hive_flutter: ^1.1.0
+  lottie: ^1.2.1
+  kartal: ^2.3.1
 
 dev_dependencies:
   flutter_test:

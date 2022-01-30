@@ -3,13 +3,13 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:vexana/vexana.dart';
 
 void main() {
-  late ILangugaeService langugaeService;
+  late ILanguageService langugaeService;
   setUp(() {
     langugaeService =
         LanguageService(NetworkManager(options: BaseOptions(baseUrl: 'https://fluttertr-ead5c.firebaseio.com/')));
   });
   test('Supported Language List', () async {
-    final data = await langugaeService.fetchLangageList();
+    final data = await langugaeService.fetchLanguageList();
     expect(data, List<String>);
   });
 
