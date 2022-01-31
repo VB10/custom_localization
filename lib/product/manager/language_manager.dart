@@ -34,6 +34,8 @@ class LanguageManager extends ChangeNotifier with ILanguageManager {
       initialLanguages = languageListHive.getValues();
     } else {
       initialLanguages = await languageService.fetchLanguageList();
+      initialResources = initialLanguages?.first;
+      notifyListeners();
       await languageListHive.addValues(initialLanguages ?? []);
     }
   }
